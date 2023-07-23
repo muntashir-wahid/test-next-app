@@ -8,6 +8,6 @@ describe("the hero section", () => {
 
     const headingEl = screen.getByTestId("heading");
 
-    expect(headingEl).toHaveTextContent("Hello World");
+    expect(headingEl).toHaveTextContent("Hello world");
   });
 });
