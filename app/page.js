@@ -3,6 +3,8 @@
 import ToggleText from "@/components/ToggleText";
 import Hero from "@/components/Hero";
 import { useState } from "react";
+import ProductList from "@/components/ProductList";
+import Login from "@/components/Login";
 
 export default function Home() {
   const [showText, setShowText] = useState(true);
@@ -17,6 +19,9 @@ export default function Home() {
         Show
       </button>
       <ToggleText showText={showText} />
+
+      {/* <ProductList /> */}
+      <Login />
     </>
   );
 }
