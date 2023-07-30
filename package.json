@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "test-dev": "jest --watch"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.32.0",
@@ -20,6 +21,7 @@
     "@babel/preset-react": "^7.22.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "autoprefixer": "10.4.14",
     "babel-jest": "^29.6.1",
     "identity-obj-proxy": "^3.0.0",
