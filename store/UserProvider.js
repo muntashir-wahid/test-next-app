@@ -1,4 +1,6 @@
-export const UserContext = React.createContext();
+import { createContext } from "react";
+
+export const UserContext = createContext();
 
 export default function UserProvider({ children }) {
   const user = {
