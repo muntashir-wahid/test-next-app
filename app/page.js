@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <Button
         onClick={() => setShowText((prevState) => !prevState)}
         className="p-3 border border-gray-700 rounded-md"
@@ -36,7 +36,7 @@ export default function Home() {
 
       <Application />
 
-      <Skills skills={skills} />
+      <Skills skills={skills} /> */}
 
       <Counter />
     </>

@@ -50,4 +50,19 @@ describe("Counter Component", () => {
     const countHeadingEl = screen.getByRole("heading", { level: 4 });
     expect(countHeadingEl).toHaveTextContent("2");
   });
+
+  test("renders a count of 10 after clicking the set button", async () => {
+    user.setup();
+
+    render(<Counter />);
+
+    const amountInputEl = screen.getByRole("spinbutton");
+    await user.type(amountInputEl, "10");
+    expect(amountInputEl).toHaveValue(10);
+
+    const setBtnEl = screen.getByRole("button", { name: "Set" });
+    await user.click(setBtnEl);
+    const countHeadingEl = screen.getByRole("heading", { level: 4 });
+    expect(countHeadingEl).toHaveTextContent("10");
+  });
 });
