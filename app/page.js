@@ -8,6 +8,7 @@ import Login from "@/components/Login";
 import Button from "@/components/Button";
 import Application from "@/components/Application";
 import Skills from "@/components/Skills";
+import Counter from "@/components/Counter";
 
 const skills = [
   { name: "React.js", id: "react.js" },
@@ -36,6 +37,8 @@ export default function Home() {
       <Application />
 
       <Skills skills={skills} />
+
+      <Counter />
     </>
   );
 }
